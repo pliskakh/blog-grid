@@ -104,7 +104,12 @@ textarea {
 .ba-post__body {
 	background: #FFF;
 	padding: 25px 30px;
+	
 	flex-grow: 1;
+	/* added */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 }
 
@@ -126,19 +131,19 @@ textarea {
 .ba-post__title {
 	font-size: 22px;
 	font-weight: 800;
+	/* added */
+	flex-grow: 1;
 
 }
 
 .ba-post__title:not(.ba-post__title--no-grow) {
-
+	
 }
 
 .ba-author{
 	text-decoration: none;
-	
 	display: flex;
 	align-items: center;
-
 }
 
 .ba-author__name{
